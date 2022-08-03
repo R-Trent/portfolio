@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'A software developer who values learning and growing.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'http://192.168.1.19:3000',
+  siteUrl: 'http://ryantrent.com',
   siteRepo: 'https://github.com/r-trent/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',

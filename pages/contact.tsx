@@ -10,6 +10,21 @@ export default function Contact() {
   const [message, setMessage] = useState('')
   const [emailSent, setEmailSent] = useState(false)
 
+  function validateEmail(mail) {
+    // https://gomakethings.com/email-validation-in-javascript/
+
+    if (
+      // eslint-disable-next-line @typescript-eslint/no-useless-escape
+      /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/.test(
+        mail
+      )
+    ) {
+      return true
+    }
+    alert('You have entered an invalid email address!')
+    return false
+  }
+
   const submit = () => {
     if (name && email && message) {
       const serviceId = 'service_70qv7cq'
@@ -20,6 +35,8 @@ export default function Contact() {
         subject,
         message,
       }
+
+      if (!validateEmail(templateParams.email)) return
 
       if (templateParams.subject == '') {
         templateParams.subject = `New Message from ${name}`

@@ -9,7 +9,10 @@ interface StackListProps {
 
 function ModernStackList(props: StackListProps): React.ReactElement {
   const { stack, justify } = props
-  const className = `flex flex-wrap gap-2 justify-${justify}`
+  const className =
+    justify == 'around'
+      ? `flex flex-wrap gap-2 justify-around`
+      : `flex flex-wrap gap-2 justify-start`
 
   const renderList = useCallback((stack) => {
     const { value, kind } = StackInfo[stack]
