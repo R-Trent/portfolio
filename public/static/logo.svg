@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="TextBounds">
+<rect height="352" transform="matrix(1 -0 -0 1 -62.4368 -80)" width="387.126" x="62.4368" y="80"/>
+</clipPath>
+</defs>
+<g id="Layer-2" vectornator:layerName="Layer 2">
+<path d="M85.0109 12.1107L426.989 12.1107C467.251 12.1107 499.889 44.8618 499.889 85.2623L499.889 426.738C499.889 467.138 467.251 499.889 426.989 499.889L85.0109 499.889C44.7492 499.889 12.1107 467.138 12.1107 426.738L12.1107 85.2623C12.1107 44.8618 44.7492 12.1107 85.0109 12.1107Z" fill="#78c4fd" fill-rule="evenodd" opacity="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="13"/>
+</g>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<text clip-path="url(#TextBounds)" fill="#ffffff" font-family="Inter-Bold" font-size="290" opacity="1" stroke="none" text-anchor="middle" transform="matrix(1 0 0 1 62.4368 80)" vectornator:width="387.126" x="0" y="0">
+<tspan textLength="384.126" x="193.563" y="281">RT</tspan>
+</text>
+</g>
+</svg>

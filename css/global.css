@@ -1,0 +1,17 @@
+.banner {
+  min-height: 60vh;
+
+  @screen lg {
+    min-height: 85vh;
+  }
+}
+
+.contact-form-label::before {
+  content: '* ';
+  color: red;
+}
+
+.contact-form-label-r::after {
+  content: ' *';
+  color: red;
+}
