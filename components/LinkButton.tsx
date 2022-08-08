@@ -6,6 +6,7 @@ const components = {
   tweak: '/static/glyphs/hyperlink.svg',
   ios: '/static/glyphs/appstore.svg',
   support: '/static/glyphs/questionmark.svg',
+  code: '/static/glyphs/code.svg',
 }
 
 const titles = {
@@ -13,6 +14,7 @@ const titles = {
   tweak: 'Learn More',
   ios: 'Download on the App Store',
   support: 'Get App Support',
+  code: 'View Source Code',
 }
 
 const LinkButton = ({ kind, link }) => {

@@ -58,21 +58,23 @@ export default function Project({ project }: InferGetStaticPropsType<typeof getS
       }
 
       return (
-        <div
-          className="bg-placeholder-light dark:bg-placeholder-dark mr-2 flex-shrink-0 overflow-hidden rounded-xl"
-          style={style}
-        >
-          <Image
-            loading="eager"
-            src={screenshot}
-            height={height}
-            width={width}
-            objectFit="cover"
-            alt={`Screenshot of ${title}`}
-            placeholder="blur"
-            className="rounded-xl !border-2"
-            blurDataURL={screenshot}
-          />
+        <div className="pb-6 pr-2">
+          <div
+            className="bg-placeholder-light dark:bg-placeholder-dark flex-shrink-0 overflow-hidden rounded-xl shadow-xl"
+            style={style}
+          >
+            <Image
+              loading="eager"
+              src={screenshot}
+              height={height}
+              width={width}
+              objectFit="cover"
+              alt={`Screenshot of ${title}`}
+              placeholder="blur"
+              className="rounded-xl"
+              blurDataURL={screenshot}
+            />
+          </div>
         </div>
       )
     },

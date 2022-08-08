@@ -1,7 +1,6 @@
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
-import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { ReactNode } from 'react'
@@ -13,7 +12,7 @@ interface Props {
 const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="flex h-full flex-col justify-between">
         <header className="sticky top-0 z-40 flex items-center justify-between bg-white/95 py-8 duration-500 ease-in-out dark:bg-gray-900/95">
           <div>
             <Link href="/" aria-label="RT">
@@ -40,8 +39,7 @@ const LayoutWrapper = ({ children }: Props) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
-        <Footer />
+        <main className="mb-10">{children}</main>
       </div>
     </SectionContainer>
   )

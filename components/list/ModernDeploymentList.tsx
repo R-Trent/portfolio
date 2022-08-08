@@ -27,7 +27,7 @@ function ModernDeploymentList(props: DeploymentListProps): React.ReactElement {
   }
 
   return (
-    <div className="flex gap-2">
+    <div className="flex flex-wrap gap-2">
       {React.Children.toArray(Object.keys(deployment).map(renderList))}
     </div>
   )

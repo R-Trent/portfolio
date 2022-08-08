@@ -6,6 +6,7 @@ export type Deployment = {
   android?: string
   ios?: string
   tweak?: string
+  code?: string
   support?: { pathname: string; query: { app: string } }
   privacy?: { pathname: string; query: { app: string } }
 }
@@ -39,7 +40,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: 'Word Helper',
-    slug: 'wordhelper',
+    slug: 'word-helper',
     imgSrc: '/static/images/project_images/wordhelper/banner.png',
     website: 'https://repo.dynastic.co/package/groups',
     description:
@@ -56,22 +57,23 @@ export const projects: Project[] = [
     ],
     deployment: null,
     links: {
+      code: 'https://github.com/R-Trent/word-helper',
       support: { pathname: '/support', query: { app: 'Word Helper' } },
       privacy: { pathname: '/privacy', query: { app: 'Word Helper: Wordle Solver' } },
     },
     subProjects: [],
-    inProgress: true,
+    inProgress: false,
   },
   {
     title: 'Portfolio Website',
     slug: 'portfolio',
     imgSrc: '/static/images/project_images/portfolio/banner.png',
-    website: 'https://repo.dynastic.co/package/groups',
+    website: 'https://ryantrent.com',
     description:
       "A responsive website that I am building to share information about myself and to showcase the projects that I've worked on.",
     shortDescription:
       "A responsive website that I am building to share information about myself and to showcase the projects that I've worked on.",
-    repository: 'https://repo.dynastic.co/package/groups',
+    repository: 'https://github.com/R-Trent/portfolio',
     stack: [Stack.typescript, Stack.next, Stack.css],
     screenshots: [
       '/static/images/project_images/portfolio/screenshot1.png',
@@ -81,8 +83,11 @@ export const projects: Project[] = [
     ],
     dimensions: [360, 640],
     deployment: null,
+    links: {
+      code: 'https://github.com/R-Trent/portfolio',
+    },
     subProjects: [],
-    inProgress: true,
+    inProgress: false,
   },
   {
     title: '"McDe\'s" Website',
@@ -90,9 +95,9 @@ export const projects: Project[] = [
     imgSrc: '/static/images/project_images/mcdes/banner.png',
     website: 'https://repo.dynastic.co/package/groups',
     description:
-      'A responsive website that I am building for a local concrete company that needed their website upgraded/redesigned.',
+      'A responsive website that I am building for a local concrete company that needed their website updated/redesigned.',
     shortDescription:
-      'A responsive website that I am building for a local concrete company that needed their website upgraded/redesigned.',
+      'A responsive website that I am building for a local concrete company that needed their website updated/redesigned.',
     repository: 'https://repo.dynastic.co/package/groups',
     stack: [Stack.javascript, Stack.html, Stack.css, Stack.bootstrap],
     screenshots: [
@@ -109,7 +114,7 @@ export const projects: Project[] = [
   },
   {
     title: '"Saint Luna" Website',
-    slug: 'saintluna',
+    slug: 'saint-luna',
     imgSrc: '/static/images/project_images/saintluna/banner.png',
     website: 'https://saintluna.me',
     repository: 'https://github.com/R-Trent/Saint-Luna-Website',
