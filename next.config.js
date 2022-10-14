@@ -62,7 +62,11 @@ module.exports = withContentlayer(
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     images: {
-      domains: ['firebasestorage.googleapis.com', 'via.placeholder.com'],
+      domains: [
+        'firebasestorage.googleapis.com',
+        'via.placeholder.com',
+        'tools.applemediaservices.com',
+      ],
     },
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts', 'config'],

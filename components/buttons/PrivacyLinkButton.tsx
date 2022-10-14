@@ -1,5 +1,5 @@
-import Image from './Image'
-import Link from './PrivacyLink'
+import Image from '../Image'
+import Link from '../PrivacyLink'
 
 const PrivacyLinkButton = ({ link }) => {
   const imgSrc = '/static/glyphs/lock.svg'

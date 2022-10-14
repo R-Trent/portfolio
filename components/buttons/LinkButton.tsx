@@ -1,5 +1,5 @@
-import Image from './Image'
-import Link from './Link'
+import Image from '../Image'
+import Link from '../Link'
 
 const components = {
   web: '/static/glyphs/hyperlink.svg',

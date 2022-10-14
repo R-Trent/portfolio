@@ -1,5 +1,5 @@
-import Image from './Image'
-import Link from './SupportLink'
+import Image from '../Image'
+import Link from '../SupportLink'
 
 const SupportLinkButton = ({ link }) => {
   const imgSrc = '/static/glyphs/questionmark.svg'

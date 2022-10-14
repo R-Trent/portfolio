@@ -9,6 +9,7 @@ export type Deployment = {
   code?: string
   support?: { pathname: string; query: { app: string } }
   privacy?: { pathname: string; query: { app: string } }
+  appstore?: string
 }
 
 export interface SubProject {
@@ -42,12 +43,12 @@ export const projects: Project[] = [
     title: 'Word Helper',
     slug: 'word-helper',
     imgSrc: '/static/images/project_images/wordhelper/banner.png',
-    website: 'https://repo.dynastic.co/package/groups',
+    website: 'https://apple.co/3fZEE6C',
     description:
       "An iOS application that helps players of the game 'Wordle' find words based on their current game.",
     shortDescription:
       'An iOS application that helps players of the game "Wordle" find words based on their current game.',
-    repository: 'https://repo.dynastic.co/package/groups',
+    repository: 'https://github.com/R-Trent/word-helper',
     stack: [Stack.swift, Stack.swiftui],
     screenshots: [
       '/static/images/project_images/wordhelper/screenshot1.png',
@@ -57,9 +58,11 @@ export const projects: Project[] = [
     ],
     deployment: null,
     links: {
+      appstore:
+        'https://apps.apple.com/us/app/word-helper-word-game-solver/id1636567574?itsct=apps_box_badge&amp;itscg=30200',
       code: 'https://github.com/R-Trent/word-helper',
       support: { pathname: '/support', query: { app: 'Word Helper' } },
-      privacy: { pathname: '/privacy', query: { app: 'Word Helper: Wordle Solver' } },
+      privacy: { pathname: '/privacy', query: { app: 'Word Helper: Word Game Solver' } },
     },
     subProjects: [],
     inProgress: false,

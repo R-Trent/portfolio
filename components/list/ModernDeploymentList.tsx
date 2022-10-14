@@ -1,8 +1,9 @@
 import { Deployment } from 'config/projects'
 import React from 'react'
-import LinkButton from '@/components/LinkButton'
-import SupportLinkButton from '../SupportLinkButton'
-import PrivacyLinkButton from '../PrivacyLinkButton'
+import LinkButton from '@/components/buttons/LinkButton'
+import SupportLinkButton from '../buttons/SupportLinkButton'
+import PrivacyLinkButton from '../buttons/PrivacyLinkButton'
+import AppStoreButton from '../buttons/AppStoreButton'
 
 interface DeploymentListProps {
   deployment: Deployment
@@ -21,6 +22,10 @@ function ModernDeploymentList(props: DeploymentListProps): React.ReactElement {
 
     if (type == 'privacy') {
       return <PrivacyLinkButton link={link} />
+    }
+
+    if (type == 'appstore') {
+      return <AppStoreButton applink={link} />
     }
 
     return <LinkButton kind={type} link={link} />
