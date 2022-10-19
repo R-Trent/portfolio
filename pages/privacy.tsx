@@ -16,8 +16,8 @@ export default function Privacy() {
         </div>
         <div className="py-2">
           <p>
-            Ryan Trent built the Word Helper: Wordle Solver app as an Open Source app. This SERVICE
-            is provided by Ryan Trent at no cost and is intended for use as is.
+            Ryan Trent built the Word Helper: Word Game Solver app as an Open Source app. This
+            SERVICE is provided by Ryan Trent at no cost and is intended for use as is.
           </p>
           <br />
           <p>
@@ -31,12 +31,6 @@ export default function Privacy() {
             providing and improving the Service. I will not use or share your information with
             anyone except as described in this Privacy Policy.
           </p>
-          {/* <br />
-          <p>
-            The terms used in this Privacy Policy have the same meanings as in our Terms and
-            Conditions, which are accessible at Word Helper: Wordle Solver unless otherwise defined
-            in this Privacy Policy.
-          </p> */}
           <h2 className="text-xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-3xl md:leading-14">
             Information Collection and Use
           </h2>
