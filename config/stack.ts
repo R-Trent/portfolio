@@ -15,21 +15,10 @@ export enum Stack {
   bootstrap,
   css,
   html,
+  vue,
 }
 
-export const AboutStack = [
-  Stack.swift,
-  Stack.swiftui,
-  Stack.obj_c,
-  Stack.react,
-  Stack.next,
-  Stack.python,
-  Stack.javascript,
-  Stack.typescript,
-  Stack.html,
-  Stack.css,
-  Stack.bootstrap,
-]
+export const AboutStack = [Stack.vue, Stack.swift, Stack.swiftui, Stack.python]
 
 type StackInfoMap = {
   value: string
@@ -80,5 +69,9 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.next]: {
     value: 'Next.js',
     kind: 'next',
+  },
+  [Stack.vue]: {
+    value: 'Vue.js',
+    kind: 'vue',
   },
 }

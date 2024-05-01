@@ -12,22 +12,23 @@ const components = {
   bootstrap: '/static/images/stack_images/bootstrap.svg',
   typeScript: '/static/images/stack_images/typescript.svg',
   next: '/static/images/stack_images/next-js.svg',
+  vue: '/static/images/stack_images/vue.svg',
 }
 
 const IconCard = ({ title, kind }) => {
   const imgSrc = components[kind]
 
   return (
-    <div className="mt-4" style={{ maxWidth: '120px', width: '120px' }}>
+    <div className="flex" style={{ maxWidth: '120px', width: '120px' }}>
       <div
         className={`${
           imgSrc && 'h-full'
-        } flex flex-col rounded-3xl border-2 border-gray-200 border-opacity-60 p-4 dark:border-gray-700`}
+        } flex flex-col rounded-xl border-2 border-gray-200 border-opacity-60 p-4 dark:border-gray-700`}
       >
         <Image
           alt={title}
           src={imgSrc}
-          className="rounded-3xl object-cover object-center"
+          className="object-cover object-center"
           width={75}
           height={75}
           placeholder="blur"

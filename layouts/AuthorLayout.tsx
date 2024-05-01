@@ -53,8 +53,8 @@ export default function AuthorLayout({ children, content }: Props) {
                   View Resume
                 </p>
               </Link>
-              <h2 className="mt-8 mb-0 text-2xl font-semibold dark:text-white">Competencies</h2>
-              <ModernStackList stack={AboutStack} justify="around" />
+              <h2 className="mt-8 mb-4 text-2xl font-semibold dark:text-white">Competencies</h2>
+              <ModernStackList stack={AboutStack} />
             </div>
           </div>
         </div>

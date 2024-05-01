@@ -123,7 +123,7 @@ export default function Project({ project }: InferGetStaticPropsType<typeof getS
       </div>
       <p className="mb-4 font-light">{description}</p>
 
-      <h2 className="mb-0 text-2xl font-semibold dark:text-white">Stack</h2>
+      <h2 className="mb-4 text-2xl font-semibold dark:text-white">Stack</h2>
       <ModernStackList stack={stack} justify="start" />
 
       <Conditional condition={hasLinks}>
