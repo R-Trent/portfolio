@@ -24,7 +24,7 @@ export default function Resume() {
           <Image
             alt="My Resume"
             src="/static/images/resume.jpg"
-            className=" object-cover object-center transition duration-500 ease-in-out dark:invert md:h-36 lg:h-48"
+            className=" object-cover object-center transition duration-500 ease-in-out md:h-36 lg:h-48"
             width={544}
             height={750}
             placeholder="blur"
