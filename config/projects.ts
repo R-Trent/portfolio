@@ -132,9 +132,7 @@ export const projects: Project[] = [
       '/static/images/project_images/saintluna/screenshot4.png',
     ],
     dimensions: [360, 640],
-    deployment: {
-      web: 'https://saintluna.me',
-    },
+    deployment: null,
     subProjects: [],
   },
   {
